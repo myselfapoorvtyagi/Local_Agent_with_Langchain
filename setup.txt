@@ -1,0 +1,18 @@
+#below instructions are for ubuntu, currently compatible on linux
+install ollama
+curl -fsSL https://ollama.com/install.sh | sh
+ollama --version
+ollama pull qwen2.5:3b
+ollama run qwen2.5:3b
+
+#install all dependency
+#clone the repo and install libraries through requirements.txt
+pip install -r requirements.txt
+
+#keep your tavily key in .env file with key name as <TAVILY_API_KEY>
+
+#run the app with terminal
+python main.py
+
+#if you want to stop ollama on the local
+sudo systemctl stop ollama
