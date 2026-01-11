@@ -8,6 +8,6 @@ def get_search_tool():
         raise ValueError("TAVILY_API_KEY not found in environment variables.")
         
     return TavilySearch(
-        max_results=3,
-        description="A search engine optimized for comprehensive, accurate, and real-time results from the web."
+        max_results=1,
+        description="ONLY use this for current events, news, or generic facts not found in the local search. NEVER use this for the user's personal info."
     )

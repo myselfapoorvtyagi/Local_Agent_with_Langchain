@@ -16,9 +16,11 @@ def get_retriever_tool():
     # 4. Define the tool function internally so it can be wrapped
     @tool
     def search_local_knowledge(query: str) -> str:
-        """Searches and returns excerpts from your private local documents. 
-        Use this for any questions about resumes, projects, or local files."""
-        
+        """
+        PRIORITY TOOL: Always use this tool FIRST for questions about the user's 
+        identity, resume, background, or personal documents. 
+        It is much faster and more accurate for personal context than web search.
+        """
         results = collection.query(
             query_texts=[query],
             n_results=3

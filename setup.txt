@@ -2,8 +2,8 @@
 install ollama
 curl -fsSL https://ollama.com/install.sh | sh
 ollama --version
-ollama pull llama3.1
-ollama run llama3.1
+ollama pull qwen2.5:3b
+ollama run qwen2.5:3b
 
 #install all dependency
 #clone the repo and install libraries through requirements.txt

@@ -1,5 +1,19 @@
 # Local_Agent_with_Langchain
 
+## Running the agent on Terminal:
+
+### Example of an external search:
+![alt text](supplementary/image.png)
+![alt text](supplementary/image-1.png)
+![alt text](supplementary/image-2.png)
+![alt text](supplementary/image-3.png)
+
+### Searching local memory:
+![alt text](supplementary/image-4.png)
+
+
+### This project is currently compatible with linux (ubuntu), to replicate this agent in your local system follow the instructions present in setup.txt
+
 ├── .env                    # Environment variables (Tavily Key, etc.)
 ├── data/                   # Local storage for ChromaDB & SQLite memory
 │   ├── chroma_db/
