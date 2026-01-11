@@ -10,7 +10,6 @@ def ingest_docs():
     loaders = {"pdf_loader": pdf_loader, "csv_loader": csv_loader}
     for loader in loaders:
         docs = loaders[loader].load()
-        print(docs)
         if docs:
             text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
             splits = text_splitter.split_documents(docs)
